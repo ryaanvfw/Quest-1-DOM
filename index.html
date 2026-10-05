@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistem Manajemen Perpustakaan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="main-title" data-category="library">Perpustakaan Digital</h1>
+  </header>
+
+  <main>
+    <!-- Form Tambah Buku -->
+    <section class="form-container">
+      <h2>Tambah Buku Baru</h2>
+      <form id="book-form">
+        <input type="text" id="book-title" placeholder="Judul Buku" required>
+        <input type="text" id="book-author" placeholder="Penulis" required>
+        <button type="submit" id="btn-submit">Simpan Buku</button>
+      </form>
+      <p id="error-message" class="error"></p>
+    </section>
+
+    <!-- Daftar Buku -->
+    <section class="list-container">
+      <h2>Daftar Koleksi Buku</h2>
+      <ul id="book-list">
+        <li class="book-item" data-id="1">
+          <span class="title">Laskar Pelangi</span> - 
+          <span class="author">Andrea Hirata</span>
+          <button class="btn-delete">Hapus</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
